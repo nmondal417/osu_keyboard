@@ -1,0 +1,4 @@
+Added Component: Designator=D?(New footprint 1)
+Added Member To Class: ClassName=bottom_schem Member=Component D? RGB LED
+Added Member To Class: ClassName=bottom_schem Member=Component P? Header 16
+Added Member To Class: ClassName=bottom_schem Member=Component P? Header 12

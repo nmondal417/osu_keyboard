@@ -12,7 +12,7 @@ const int B [4] = {2, 5, 8, 11};
 
 bool rgb_mode = 1;    //0 for LED color sweep, 1 for LED trigger on keypress
 
-int rgb_pins [4][3] = {{16, 17, 21}, {4, 18, 19}, {14, 22, 23}, {33, 15, 32}};
+int rgb_pins [4][3] = {{16, 17, 21}, {5, 18, 19}, {14, 22, 23}, {33, 15, 32}};
 int rgb_pwm [4][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};   //pwm values for LEDs (0-255)
 int off [3] = {0, 0, 0};   //pwm value for off LED
 

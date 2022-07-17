@@ -1,0 +1,5 @@
+Added Component: Designator=SW?(Rocker Switch - SPST (right-angle)-Footprint-1)
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=bottom_schem Member=Component P? Header 16
+Added Member To Class: ClassName=bottom_schem Member=Component P? Header 12
+Added Member To Class: ClassName=bottom_schem Member=Component SW? Rocker Switch - SPST (right-angle)
