@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=R2 Pin=Q1-2
+Removed Pin From Net: NetName=R3 Pin=Q2-2
+Removed Pin From Net: NetName=R4 Pin=Q3-2
+Removed Pin From Net: NetName=R1 Pin=Q4-2
+Removed Pin From Net: NetName=G2 Pin=Q5-2
+Removed Pin From Net: NetName=G3 Pin=Q6-2
+Removed Pin From Net: NetName=G4 Pin=Q7-2
+Removed Pin From Net: NetName=G1 Pin=Q8-2
+Removed Pin From Net: NetName=B2 Pin=Q9-2
+Removed Pin From Net: NetName=B3 Pin=Q10-2
+Removed Pin From Net: NetName=B4 Pin=Q11-2
+Removed Pin From Net: NetName=B1 Pin=Q12-2
+Change Component Designator: OldDesignator=C1 NewDesignator=C4
+Change Component Designator: OldDesignator=C2 NewDesignator=C3
+Change Component Designator: OldDesignator=C3 NewDesignator=C2
+Change Component Designator: OldDesignator=C4 NewDesignator=C1
+Change Component Designator: OldDesignator=R16 NewDesignator=R22
+Change Component Designator: OldDesignator=R17 NewDesignator=R23
+Change Component Designator: OldDesignator=R18 NewDesignator=R20
+Change Component Designator: OldDesignator=R19 NewDesignator=R21
+Change Component Designator: OldDesignator=R20 NewDesignator=R18
+Change Component Designator: OldDesignator=R21 NewDesignator=R19
+Change Component Designator: OldDesignator=R22 NewDesignator=R16
+Change Component Designator: OldDesignator=R23 NewDesignator=R17
+Added Pin To Net: NetName=R1 Pin=Q1-2
+Added Pin To Net: NetName=R2 Pin=Q2-2
+Added Pin To Net: NetName=R3 Pin=Q3-2
+Added Pin To Net: NetName=R4 Pin=Q4-2
+Added Pin To Net: NetName=G1 Pin=Q5-2
+Added Pin To Net: NetName=G2 Pin=Q6-2
+Added Pin To Net: NetName=G3 Pin=Q7-2
+Added Pin To Net: NetName=G4 Pin=Q8-2
+Added Pin To Net: NetName=B1 Pin=Q9-2
+Added Pin To Net: NetName=B2 Pin=Q10-2
+Added Pin To Net: NetName=B3 Pin=Q11-2
+Added Pin To Net: NetName=B4 Pin=Q12-2

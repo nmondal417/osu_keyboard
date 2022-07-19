@@ -1,0 +1,19 @@
+Added Component: Designator=P?(HDR1X5H)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R?(AXIAL-0.4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.4 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=bottom_schem Member=Component D1 RGB LED
+Added Member To Class: ClassName=bottom_schem Member=Component DS3 HLMP-4740
+Added Member To Class: ClassName=bottom_schem Member=Component P2 Header 12
+Added Member To Class: ClassName=bottom_schem Member=Component P? Header 5H
+Added Member To Class: ClassName=bottom_schem Member=Component Q11 2N5087RLRAG
+Added Member To Class: ClassName=bottom_schem Member=Component R1 Res1
+Added Member To Class: ClassName=bottom_schem Member=Component R? Res2

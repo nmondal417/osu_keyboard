@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=U1 Old Footprint=Cherry MX-Footprint-1 New Footprint=Cherry MX-Footprint-1
+Change Component Footprint: Designator=U2 Old Footprint=Cherry MX-Footprint-1 New Footprint=Cherry MX-Footprint-1
+Change Component Footprint: Designator=U3 Old Footprint=Cherry MX-Footprint-1 New Footprint=Cherry MX-Footprint-1
+Change Component Footprint: Designator=U4 Old Footprint=Cherry MX-Footprint-1 New Footprint=Cherry MX-Footprint-1
+Change Component Designator: OldDesignator=U1 NewDesignator=U4
+Change Component Designator: OldDesignator=U2 NewDesignator=U3
+Change Component Designator: OldDesignator=U3 NewDesignator=U2
+Change Component Designator: OldDesignator=U4 NewDesignator=U1
+Change Net Name : Old Net Name=NetP1_1 New Net Name=Key4_RAW
+Change Net Name : Old Net Name=NetP1_2 New Net Name=Key3_RAW
+Change Net Name : Old Net Name=NetP1_4 New Net Name=Key2_RAW
+Change Net Name : Old Net Name=NetP1_5 New Net Name=Key1_RAW

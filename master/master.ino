@@ -10,7 +10,7 @@ const int G [4] = {1, 4, 7, 10};
 const int B [4] = {2, 5, 8, 11};
 
 
-bool rgb_mode = 1;    //0 for LED color sweep, 1 for LED trigger on keypress
+bool rgb_mode = 0;    //0 for LED color sweep, 1 for LED trigger on keypress
 
 int rgb_pins [4][3] = {{16, 17, 21}, {5, 18, 19}, {14, 22, 23}, {33, 15, 32}};
 int rgb_pwm [4][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};   //pwm values for LEDs (0-255)
@@ -21,7 +21,7 @@ int curr_state_idx;
 int next_state [4][3];    //pwm state the LEDs are transitioning TO
 int next_state_idx;       
 
-int fade_delay = 500;  //time between pwm writes, in microseconds
+int fade_delay = 5000;  //time between pwm writes, in microseconds
 long fade_time_marker;   
 
 //bool exec_fade = 1;  //set to 0 to not run fade
@@ -52,6 +52,18 @@ int led = 13;
 long led_time;
 
 bool prev_ble_state;
+
+int batt_voltage_pin = A13;
+float batt_voltage;
+long batt_timer;
+int batt_state;
+
+int batt_leds [3] = {27, 4, 12};
+
+const int HI = 1;
+const int MED = 2;
+const int LO = 3;
+const int VERY_LO = 4; 
 
 
 void copy(int* src, int* dst, int len) {
@@ -106,10 +118,6 @@ void setup() {
     }
 
   }
-  
-  
-    
-
 
   ///////////////////////////////////////
   
@@ -124,6 +132,15 @@ void setup() {
   pinMode(led, OUTPUT);
   led_time = millis();
   digitalWrite(led, LOW);
+
+  batt_timer = millis();
+  pinMode(batt_voltage_pin, INPUT);
+  batt_state = HI;
+
+  for (int i = 0; i < sizeof(batt_leds)/sizeof(batt_leds[0]); i++) {
+    pinMode(batt_leds[i], OUTPUT);
+    digitalWrite(batt_leds[i], HIGH);
+  }
 
   prev_ble_state = bleKeyboard.isConnected();
   delay(100);
@@ -185,6 +202,64 @@ void loop() {
     led_time = millis();
   }
 
+  ////////////////
+  
+  //battery voltage update
+  if (millis() - batt_timer > 1000) {
+      batt_voltage = analogRead(batt_voltage_pin)*3.3/4096.0*1.87;
+      Serial.println(batt_voltage);
+      batt_timer = millis();
+
+      switch(batt_state) {
+        case HI:
+          if (batt_voltage < 3.65) {
+            batt_state = MED;
+            digitalWrite(batt_leds[2], LOW);
+          }
+          Serial.println("batt voltage high");
+          break;
+  
+        case MED:     
+          if (batt_voltage < 3.35) {
+            batt_state = LO;
+            digitalWrite(batt_leds[1], LOW);
+          }
+          if (batt_voltage > 3.8) {
+            batt_state = HI;
+            digitalWrite(batt_leds[2], HIGH);
+          }
+          Serial.println("batt voltage medium");
+          break;
+
+        case LO:     
+          if (batt_voltage < 3.05) {
+            batt_state = VERY_LO;
+            digitalWrite(batt_leds[0], LOW);
+          }
+          if (batt_voltage > 3.5) {
+            batt_state = MED;
+            digitalWrite(batt_leds[1], HIGH);
+          }
+          Serial.println("batt voltage low");
+          break;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+
+        case VERY_LO:     
+          if (batt_voltage > 3.2) {
+            batt_state = LO;
+            digitalWrite(batt_leds[0], HIGH);
+          }
+          break;
+        default:
+          Serial.println("Why are you here?");
+          break;
+      }
+   
+  } 
+  
+  
+  
+  
+
 
   if (bleKeyboard.isConnected() && !prev_ble_state) {
     Serial.println("here");
@@ -221,14 +296,14 @@ void loop() {
           copy(off, next_state[key], 3);
   
         }
-
+/*
         Serial.print("curent color: ");
         Serial.print(String(rgb_pwm[2][0]));
         Serial.print("  ");
         Serial.print(String(rgb_pwm[2][1]));
         Serial.print("  ");
         Serial.println(String(rgb_pwm[2][2]));
-      
+      */
       }
       prev_key_states[key] = key_states[key];
  
