@@ -150,6 +150,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GXMYYSYP
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Keyboard_Bottom\Design Rule Check - bottom_pcb.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
