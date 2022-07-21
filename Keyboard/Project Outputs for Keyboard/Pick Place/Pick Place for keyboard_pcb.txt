@@ -1,0 +1,18 @@
+Altium Designer Pick and Place Locations
+C:\college\osu_keyboard\Keyboard\Project Outputs for Keyboard\Pick Place\Pick Place for keyboard_pcb.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       21/07/22
+Time:       00:14
+Revision:   c412673f08284f3569c18d3a393f6c0ad7eadc57
+Variant:    No variations
+Units used: mil
+
+Designator Comment     Layer       Footprint             Center-X(mil) Center-Y(mil) Rotation Description                                  Height(mil) 
+U1         "Cherry MX" TopLayer    Cherry_MX-Footprint-1 2130.000      1955.000      0        "Footprint for PCB mounted Cherry MX switch" 0.000       
+U2         "Cherry MX" TopLayer    Cherry_MX-Footprint-1 2878.032      1955.000      0        "Footprint for PCB mounted Cherry MX switch" 0.000       
+U3         "Cherry MX" TopLayer    Cherry_MX-Footprint-1 5122.126      1955.000      0        "Footprint for PCB mounted Cherry MX switch" 0.000       
+U4         "Cherry MX" TopLayer    Cherry_MX-Footprint-1 5870.158      1955.000      0        "Footprint for PCB mounted Cherry MX switch" 0.000       
+P1         "Header 5H" BottomLayer HDR1X5H               4435.000      2300.000      180      "Header, 5-Pin, Right Angle"                 0.000       

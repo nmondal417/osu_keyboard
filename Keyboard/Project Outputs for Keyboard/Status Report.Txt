@@ -1,0 +1,10 @@
+Output: Electrical Rules Check
+Type  : ERC
+From  : Project [Keyboard.PrjPcb]
+   Generated File[Keyboard.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 12:14:54 AM On 7/21/2022
