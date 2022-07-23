@@ -28,11 +28,12 @@ void loop() {
       Serial.println("Hello world");
       Serial.println(SerialBT.available());
       batt_timer = millis();
-  }  
+  } 
 
   if (SerialBT.available()){
     if (millis() - batt_timer > 1000) {
       SerialBT.println(analogRead(batt_voltage)*3.3/4096*2);
+      Serial.write(SerialBT.read());
       Serial.println("Hello world");
       Serial.println(SerialBT.available());
       batt_timer = millis();

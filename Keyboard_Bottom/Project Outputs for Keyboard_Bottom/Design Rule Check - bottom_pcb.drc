@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\college\osu_keyboard\Keyboard_Bottom\bottom_pcb.PcbDoc
-Date     : 7/21/2022
-Time     : 12:31:05 AM
+Date     : 7/23/2022
+Time     : 4:17:07 PM
 
 Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Rule Violations :0
@@ -45,4 +45,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
