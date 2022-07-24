@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: bottom_pcb.PcbDoc   7/23/2022  4:14:29 PM
+NCDrill File Report For: bottom_pcb.PcbDoc   7/23/2022  5:42:31 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -10,7 +10,7 @@ Tool       Hole Size               Hole Tolerance               Hole Type       
 T1      28mil (0.7mm)                                             Round             12        PTH        7.65inch (194.22mm)
 T2      28mil (0.711mm)                                           Round             2         PTH        0.84inch (21.21mm)
 T3      33mil (0.85mm)                                            Round             46        PTH        18.10inch (459.74mm)
-T4      35mil (0.9mm)                                             Round             116       PTH        28.61inch (726.58mm)
+T4      35mil (0.9mm)                                             Round             116       PTH        28.50inch (723.81mm)
 T5      41mil (1.05mm)                                            Round             6         PTH        0.94inch (23.75mm)
 T6      59mil (1.5mm)                                             Round             2         PTH        0.28inch (7.00mm)
 T7      134mil (3.4mm)                                            Round             7         PTH        17.41inch (442.09mm)
